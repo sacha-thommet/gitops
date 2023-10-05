@@ -8,7 +8,7 @@ spec:
     kind: Service
     name: apache-service
   port:
-    targetPort: 80
+    targetPort: 8080
   tls:
     termination: reencrypt
     insecureEdgeTerminationPolicy: Redirect
