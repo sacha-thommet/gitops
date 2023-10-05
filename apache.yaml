@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Apache
+  labels:
+    app: Apache
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Apache
+  template:
+    metadata:
+      name: Apache
+      labels:
+        app: Apache
+    spec:
+      containers:
+        - name: Apache
+          image: quay.io/centos7/httpd-24-centos7
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+      
