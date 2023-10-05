@@ -3,7 +3,7 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: apache-route
 spec:
-  host: test-gitops.apps.cluster03.ocp.nutanix.its4u-group.com
+  host: test-gitops-apache.apps.cluster03.ocp.nutanix.its4u-group.com
   to:
     kind: Service
     name: apache-service
